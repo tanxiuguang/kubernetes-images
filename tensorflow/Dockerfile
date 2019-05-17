@@ -8,7 +8,7 @@ RUN pip install --upgrade pip
 # For how to run TensorFlow on Hadoop,
 # please refer to https://www.tensorflow.org/deploy/hadoop
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Add symbol link for libcuda.so
 RUN ln -s /usr/local/cuda/targets/x86_64-linux/lib/stubs/libcuda.so \
