@@ -8,6 +8,8 @@ RUN pip install --upgrade pip
 RUN pip install tensorflow-gpu==${TENSORFLOW_VERSION} && \
     pip3 install tensorflow-gpu==${TENSORFLOW_VERSION}
 
+RUN pip3 install tensorlayer
+
 RUN pip install opencv-python && pip3 install opencv-python
 
 # Add symbol link for libcuda.so
