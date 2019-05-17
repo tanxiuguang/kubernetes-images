@@ -1,6 +1,6 @@
 FROM cmhi/cuda9.0-cudnn7
 
-ENV TENSORFLOW_VERSION=2.2.0
+ENV TENSORFLOW_VERSION=1.7.0
 
 RUN pip install --upgrade pip
 # For how to run TensorFlow on Hadoop,
@@ -8,7 +8,7 @@ RUN pip install --upgrade pip
 RUN pip install tensorflow-gpu==${TENSORFLOW_VERSION} && \
     pip3 install tensorflow-gpu==${TENSORFLOW_VERSION}
 
-RUN pip3 install tensorlayer
+RUN pip3 install --upgrade tensorlayer==1.7.0
 
 RUN pip install opencv-python && pip3 install opencv-python
 
