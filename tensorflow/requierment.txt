@@ -13,8 +13,6 @@ grpcio==1.20.1
 html5lib==0.9999999
 idna==2.8
 imageio==2.5.0
-ipython==7.5.0
-ipython-genutils==0.2.0
 jedi==0.13.3
 kiwisolver==1.1.0
 Markdown==3.1
