@@ -9,7 +9,7 @@ RUN ln -s /usr/local/cuda/targets/x86_64-linux/lib/stubs/libcuda.so \
           /usr/local/cuda/targets/x86_64-linux/lib/stubs/libcuda.so.1
 
 #update and upgrade, install git
-RUN apt-get update && apt-get upgrade -y && apt-get -y install git && ap-get install -y vim
+RUN apt-get update && apt-get upgrade -y && apt-get -y install git && apt-get install -y vim
 
 ENV LC_ALL C
 
